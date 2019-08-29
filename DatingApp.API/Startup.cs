@@ -42,7 +42,7 @@ namespace DatingApp.API
                         Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 });
             services.AddCors();
-            services.AddAutoMapper();
+            services.AddAutoMapper(typeof(DatingRepository).Assembly);
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IDatingRepository, DatingRepository>();
