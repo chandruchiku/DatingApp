@@ -19,7 +19,7 @@
                   Welcome {{authService.decodedToken?.unique_name | titlecase}} <span class="caret"></span>
           </a>
           <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu mt-3" role="menu">
-            <li role="menuitem"><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Edit Profile</a></li>
+            <li role="menuitem"><a class="dropdown-item" [routerLink]="[ '/member/edit']"><i class="fa fa-user"></i> Edit Profile</a></li>
             <li class="divider dropdown-divider"></li>
             <li role="menuitem"><a class="dropdown-item" (click)="logOut()"><i class="fa fa-sign-out"></i> Logout</a>
             </li>
