@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 import { FileUploader } from 'ng2-file-upload';
-import { Photo } from 'src/app/_models/Photo';
+import { Photo } from 'src/app/_models/photo';
 import { AlertifyService } from 'src/app/_services/alertify.service';
 import { AuthService } from 'src/app/_services/auth.service';
 import { UserService } from 'src/app/_services/user.service';
