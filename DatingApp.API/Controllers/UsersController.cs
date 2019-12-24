@@ -8,12 +8,14 @@ using DatingApp.API.DTO;
 using DatingApp.API.Helpers;
 using DatingApp.API.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DatingApp.API.Controllers
 {
     [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
+    [EnableCors("AllowAll")]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
