@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/DatingApp.API/bin/Debug/netcoreapp2.2/DatingApp.API.dll",
+            "program": "${workspaceFolder}/DatingApp.API/bin/Debug/netcoreapp3.0/DatingApp.API.dll",
             "args": [],
             "cwd": "${workspaceFolder}/DatingApp.API",
             "stopAtEntry": false,
@@ -18,7 +18,7 @@
                 "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Production"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
